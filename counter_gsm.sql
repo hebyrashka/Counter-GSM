@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 02 2021 г., 12:02
+-- Время создания: Июн 27 2021 г., 13:36
 -- Версия сервера: 8.0.19
 -- Версия PHP: 7.3.26
 
@@ -35,13 +35,6 @@ CREATE TABLE `routes` (
   `haveId` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
---
--- Дамп данных таблицы `routes`
---
-
-INSERT INTO `routes` (`id`, `from_place`, `to_place`, `total_km`, `haveId`) VALUES
-(1, 'Асино', 'Копыловка', 100, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -59,19 +52,10 @@ CREATE TABLE `trip` (
   `haveId` int NOT NULL,
   `date_check` date NOT NULL,
   `how_litr_check` int NOT NULL,
-  `summa_check` int NOT NULL,
-  `url_check` varchar(255) DEFAULT NULL
+  `summa_check` float NOT NULL,
+  `url_check` varchar(255) DEFAULT NULL,
+  `whenAdd` timestamp(6) NULL DEFAULT CURRENT_TIMESTAMP(6)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Дамп данных таблицы `trip`
---
-
-INSERT INTO `trip` (`id`, `dateHappen`, `from_km`, `to_km`, `total_km`, `route`, `number_request`, `haveId`, `date_check`, `how_litr_check`, `summa_check`, `url_check`) VALUES
-(13, '2021-05-29', 100, 200, 100, 'Асино - Копыловка', '123 123', 1, '2021-05-29', 100, 50, NULL),
-(14, '2021-06-01', 100, 200, 100, 'Асино - Копыловка', '123 123', 1, '2021-06-03', 100, 50, NULL),
-(15, '2021-06-01', 100, 2500, 100, 'Асино - Копыловка', '4242', 1, '2021-06-11', 1000, 500, NULL),
-(16, '2021-06-01', 100, 200, 100, 'Асино - Копыловка', '4242', 1, '2021-06-01', 100, 50, NULL);
 
 -- --------------------------------------------------------
 
@@ -97,13 +81,6 @@ CREATE TABLE `users` (
   `type_oil` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `rasxod_km` float DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Дамп данных таблицы `users`
---
-
-INSERT INTO `users` (`id`, `login`, `password`, `fio`, `position`, `adress`, `phone`, `number_license`, `number_card`, `limit_card`, `norma`, `rate_km`, `marka_car`, `gov_number`, `type_oil`, `rasxod_km`) VALUES
-(1, 'admin', '123', 'Юрьев Александр Михайлович', 'специалиста по чесанию', 'Ул. Пушкина Дом Колотушкина 17', 89521532771, '12313213213', '123', -130, 'summer', 7.75, 'Corona', 'ad141f', 'АИ-92', 10);
 
 --
 -- Индексы сохранённых таблиц
@@ -135,19 +112,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `routes`
 --
 ALTER TABLE `routes`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT для таблицы `trip`
 --
 ALTER TABLE `trip`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
