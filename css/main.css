@@ -1,0 +1,378 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+@keyframes showNavbar {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+body {
+	background-color: #ffffff;
+	font-family: sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #c6c6c6;
+}
+a:hover {
+	color: #007bff;
+}
+TABLE {
+	border-collapse: collapse; /* Убираем двойные линии между ячейками */
+	margin-top: 5px;
+	width: 100%;
+}
+TD, TH {
+	padding: 3px; /* Поля вокруг содержимого таблицы */
+	border: 1px solid #007bff; /* Параметры рамки */
+}
+TH {
+	background: #007bff; /* Цвет фона */
+	color: white;
+}
+select {
+	background: none;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #bcbcbc;
+	font-size: 16px;
+	padding-left: 12px;
+	height: 40px;
+	width: 100%;
+}
+input {
+	background: none;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #bcbcbc;
+	font-size: 16px;
+	padding-left: 12px;
+	height: 40px;
+}
+button {
+	background: none;
+	border: none;
+	outline: none;
+	border: 1px solid #007bff;
+	height: 40px;
+	color: #007bff;
+	padding: 0px 10px 0px 10px;
+}
+button:hover {
+	background-color: #007bff;
+	cursor: pointer;
+	color: #ffffff;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: #007bff;
+	height: 100%;
+	width: 60px;
+	transition: 0.5s;
+}
+.join-wrapper,
+.registration-wrapper {
+	display: flex;
+	justify-content: center;
+	margin-top: 87px;
+}
+#form-join,
+#form-registration {
+	display: flex;
+	flex-direction: column;
+	min-width: 200px;
+}
+#input-join-login,
+#input-join-password,
+#input-registration-login,
+#input-registration-password {
+	max-width: 198px;
+}
+#input-join-login,
+#input-registration-login {
+	margin-bottom: 12px;
+}
+#input-join-password {
+	margin-bottom: 21px;
+}
+#input-registration-password {
+	margin-bottom: 12px;
+}
+#input-registration-check-password {
+	margin-bottom: 21px;
+}
+#btn-join-submit,
+#btn-registration-submit {
+	font-size: 16px;
+	height: 37px;
+}
+.footer-link {
+	display: flex;
+	justify-content: center;
+	margin-top: 16px;
+}
+.a-join,
+.a-registration {
+	font-size: 15px;
+}
+.a-join {
+	margin-right: 16px;
+}
+.item-navbar {
+	text-align: center;
+	padding-top: 18px;
+	/*padding-left: 5px;*/
+	font-size: 19px;
+	color: black;
+	color: white;
+	height: 60px;
+	width: 100%;
+}
+.item-navbar:hover {
+	background-color: #ffffff;
+	color: #007bff;
+}
+.icon-navbar {
+	position: relative;
+	top: -1px;
+	left: -1px;
+}
+.navbar-content {
+	display: none;
+	transition: 0.5s;
+	animation: showNavbar 1s;
+}
+#btn-hamburger {
+	height: 60px;
+	width: 100%;
+}
+.hamburger-wrapper:hover {
+	background-color: #ffffff;
+}
+.navbar-header {
+	width: 100%;
+}
+.wrapper {
+	padding-top: 5px;
+	margin-left: 60px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#inline-input,
+.form-excel {
+	display: flex;
+}
+.form-excel {
+	margin-top: 5px;
+}
+.input-excel-to {
+	margin-left: 10px;
+}
+.btn-create-excel {
+	display: flex;
+	margin-left: 5px;
+}
+.btn-excel-list {
+	width: 80px;
+	margin-left: 3.5px;
+}
+.action-with-trip {
+	margin-left: auto;
+}
+.not-route {
+	text-align: center;
+}
+.label-column {
+	display: flex;
+	flex-direction: column;
+}
+#form-change-settings {
+	width: 100%;
+	display: flex;
+	margin-bottom: 5px;
+}
+.flex-settings {
+	width: 33.3%;
+}
+.flex-settings {
+	width: 33.3%;
+	margin-left: 5px;
+}
+.flex-settings:first-child {
+	margin-left: 0px;
+}
+#form-change-settings > input {
+	margin-top: 5px;
+}
+.norma-option-flex {
+	display: flex;
+}
+.norma-option-flex div label {
+	position: relative;
+	bottom: 14px;
+}
+.norma-option-flex div:nth-child(2) {
+margin-left: 10px;
+}
+.label-column input, label {
+	margin-top: 5px;
+}
+.table-route {
+	margin-bottom: 5px;
+}
+.flex-settings h5 {
+	margin-top: 5px;
+}
+.modal-wrapper {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	display: none;
+}
+.modal-content {
+	z-index: -1;
+	animation: showNavbar 1s;
+	width: 265px;
+	margin: 0 auto;
+	border-radius: 3px;
+	background-color: rgba(255, 255, 255, 1);
+}
+.modal-header {
+	display: flex;
+	padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.modal-header h4:nth-child(2) {
+	margin-left: auto;
+}
+.modal-header h4:nth-child(2):hover {
+	cursor: pointer;
+}
+.modal-content form {
+	text-align: center;
+}
+.btn-add-route {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.new-trip {
+	
+}
+#form-trip {
+	display: flex;
+}
+.new-trip__inputs {
+	display: flex;
+	flex-direction: column;
+}
+#new-trip__form-trip {
+	width: 50%;
+	margin-right: 5px;
+}
+#new-trip__form-check {
+	width: 50%;
+}
+.new-trip__input-with-checkbox {
+	display: flex;
+}
+.new-trip__input-with-checkbox .new-trip__inputs {
+	width: 92%;
+}
+.new-trip__input-with-checkbox .new-trip__checkbox-auto {
+	width: auto;
+}
+#new-trip__checkbox-auto input {
+	margin-top: 18px;
+}
+#new-trip__checkbox-auto label {
+	position: relative;
+	bottom: 14px;
+}
+.new-trip__info {
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.new-trip__km,
+.new-trip__litr,
+.new-trip__ost-litr {
+	text-align: center;
+	width: 33.333%;
+}
+.new-trip__buttons {
+	float: right;
+}
+.selectRoutes {
+	margin-top: 5px;
+	display: flex;
+}
+.selectRoutes select {
+	margin-right: 5px;
+}
+.removeButton {
+	margin-left: 5px;
+}
+.custom-file-input {
+	display: none;
+}
+.custom-file-label {
+	background: none;
+	border: none;
+	outline: none;
+	border: 1px solid #007bff;
+	height: 40px;
+	color: #007bff;
+	padding: 0px 10px 0px 10px;
+}
+.new-trip__file {
+	margin-top: 7px;
+}
+.custom-file-label:hover {
+	background-color: #007bff;
+	cursor: pointer;
+	color: #ffffff;
+}
+.title-custom-file {
+	margin-top: 5px;
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 992px) {
+	#form-change-settings {
+		flex-direction: column;
+	}
+	.flex-settings {
+		width: 100%;
+		margin: 0;
+	}
+	#form-trip {
+		flex-direction: column;
+	}
+	#new-trip__form-trip {
+		width: 100%;
+	}
+	#new-trip__form-check {
+		margin-top: 5px;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.new-trip__input-with-checkbox .new-trip__inputs {
+		width: 88%;
+	}	
+}
