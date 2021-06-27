@@ -157,74 +157,74 @@ if ($excelAction == 'list') {
         case '01':
             $spreadsheetList->getSheetByName('ПЛ-ТК')
                 ->setCellValue('L3', 'январь');
-            $spreadsheetList->getSheetByName('СЗ-Н')
-                ->setCellValue('T32', 'январь');
+            $spreadsheetList->getSheetByName('СЗ-ТК')
+                ->setCellValue('T31', 'январь');
             break;
         case '02':
             $spreadsheetList->getSheetByName('ПЛ-ТК')
                 ->setCellValue('L3', 'февраль');
-            $spreadsheetList->getSheetByName('СЗ-Н')
-                ->setCellValue('T32', 'февраль');
+            $spreadsheetList->getSheetByName('СЗ-ТК')
+                ->setCellValue('T31', 'февраль');
             break;
         case '03':
             $spreadsheetList->getSheetByName('ПЛ-ТК')
                 ->setCellValue('L3', 'март');
-            $spreadsheetList->getSheetByName('СЗ-Н')
-                ->setCellValue('T32', 'март');
+            $spreadsheetList->getSheetByName('СЗ-ТК')
+                ->setCellValue('T31', 'март');
             break;
         case '04':
             $spreadsheetList->getSheetByName('ПЛ-ТК')
                 ->setCellValue('L3', 'апрель');
-            $spreadsheetList->getSheetByName('СЗ-Н')
-                ->setCellValue('T32', 'апрель');
+            $spreadsheetList->getSheetByName('СЗ-ТК')
+                ->setCellValue('T31', 'апрель');
             break;
         case '05':
             $spreadsheetList->getSheetByName('ПЛ-ТК')
                 ->setCellValue('L3', 'май');
-            $spreadsheetList->getSheetByName('СЗ-Н')
-                ->setCellValue('T32', 'май');
+            $spreadsheetList->getSheetByName('СЗ-ТК')
+                ->setCellValue('T31', 'май');
             break;
         case '06':
             $spreadsheetList->getSheetByName('ПЛ-ТК')
                 ->setCellValue('L3', 'июнь');
-            $spreadsheetList->getSheetByName('СЗ-Н')
-                ->setCellValue('T32', 'июнь');
+            $spreadsheetList->getSheetByName('СЗ-ТК')
+                ->setCellValue('T31', 'июнь');
             break;
         case '07':
             $spreadsheetList->getSheetByName('ПЛ-ТК')
                 ->setCellValue('L3', 'июль');
-            $spreadsheetList->getSheetByName('СЗ-Н')
-                ->setCellValue('T32', 'июль');
+            $spreadsheetList->getSheetByName('СЗ-ТК')
+                ->setCellValue('T31', 'июль');
             break;
         case '08':
             $spreadsheetList->getSheetByName('ПЛ-ТК')
                 ->setCellValue('L3', 'август');
-            $spreadsheetList->getSheetByName('СЗ-Н')
-                ->setCellValue('T32', 'август');
+            $spreadsheetList->getSheetByName('СЗ-ТК')
+                ->setCellValue('T31', 'август');
             break;
         case '09':
             $spreadsheetList->getSheetByName('ПЛ-ТК')
                 ->setCellValue('L3', 'сентябрь');
-            $spreadsheetList->getSheetByName('СЗ-Н')
-                ->setCellValue('T32', 'сентябрь');
+            $spreadsheetList->getSheetByName('СЗ-ТК')
+                ->setCellValue('T31', 'сентябрь');
             break;
         case '10':
             $spreadsheetList->getSheetByName('ПЛ-ТК')
                 ->setCellValue('L3', 'октябрь');
-            $spreadsheetList->getSheetByName('СЗ-Н')
-                ->setCellValue('T32', 'октябрь');
+            $spreadsheetList->getSheetByName('СЗ-ТК')
+                ->setCellValue('T31', 'октябрь');
             break;
         case '11':
             $spreadsheetList->getSheetByName('ПЛ-ТК')
                 ->setCellValue('L3', 'ноябрь');
-            $spreadsheetList->getSheetByName('СЗ-Н')
-                ->setCellValue('T32', 'ноябрь');
+            $spreadsheetList->getSheetByName('СЗ-ТК')
+                ->setCellValue('T31', 'ноябрь');
             break;
         case '12':
             $spreadsheetList->getSheetByName('ПЛ-ТК')
                 ->setCellValue('L3', 'декабрь');
-            $spreadsheetList->getSheetByName('СЗ-Н')
-                ->setCellValue('T32', 'декабрь');
+            $spreadsheetList->getSheetByName('СЗ-ТК')
+                ->setCellValue('T31', 'декабрь');
             break;
     }
 
@@ -253,7 +253,7 @@ if ($excelAction == 'list') {
         ->setCellValue('J36', $totalKm)
         ->setCellValue('X31', $fioReduction)
         /*->setCellValue('T32', $mouth)*/
-        ->setCellValue('Q32', date('t', strtotime($date)));
+        ->setCellValue('Q31', date('t', strtotime($date)));
 
 
 
